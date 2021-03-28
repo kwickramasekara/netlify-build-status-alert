@@ -1,5 +1,4 @@
-var BUILD_STATUS_URL =
-  "https://magnificent-owl-e1bae.netlify.app/.netlify/functions/builds";
+var BUILD_STATUS_URL = "/.netlify/functions/builds";
 var BUILD_STATUS_CHECK_INTERVAL = 3000;
 var buildingAlertVisible = false;
 var classHidden = "nbsa-util-hidden";
