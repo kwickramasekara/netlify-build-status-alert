@@ -3,7 +3,8 @@
     Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   font-size: 16px;
   position: fixed;
-  bottom: 10px;
+  left: 0;
+  bottom: 0;
   z-index: 999999999;
 }
 #netlify-build-status-alert .nbsa-block {
