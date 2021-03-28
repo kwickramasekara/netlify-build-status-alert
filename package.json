@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "npx uglifyjs src/netlify-build-status-alert.js --mangle --compress --output dist/netlify-build-status-alert.min.js"
+    "build": "uglifyjs src/netlify-build-status-alert.js --mangle --compress --output dist/netlify-build-status-alert.min.js",
+    "minify-css": "minify src/netlify-build-status-alert.css",
+    "minify-html": "minify src/netlify-build-status-alert.html"
   },
   "repository": {
     "type": "git",
@@ -27,6 +29,7 @@
   },
   "homepage": "https://github.com/kwickramasekara/netlify-build-status-alert#readme",
   "devDependencies": {
+    "minify": "^7.0.1",
     "uglify-js": "^3.13.2"
   }
 }
