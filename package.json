@@ -1,7 +1,7 @@
 {
   "name": "netlify-build-status-alert",
   "version": "1.0.0",
-  "description": "Notify site visitors when Netlify is going through build process. ",
+  "description": "Notification to show your site visitors when Netlify is going through build process.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
