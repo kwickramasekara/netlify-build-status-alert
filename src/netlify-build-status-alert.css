@@ -4,6 +4,7 @@
   font-size: 16px;
   position: fixed;
   bottom: 10px;
+  z-index: 999999999;
 }
 #netlify-build-status-alert .nbsa-block {
   display: table;
