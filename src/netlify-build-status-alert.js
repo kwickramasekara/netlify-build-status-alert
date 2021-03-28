@@ -1,4 +1,4 @@
-var BUILD_STATUS_URL = "/.netlify/functions/builds";
+var BUILD_STATUS_URL = "/.netlify/functions/build-status";
 var BUILD_STATUS_CHECK_INTERVAL = 3000;
 var buildingAlertVisible = false;
 var classHidden = "nbsa-util-hidden";
