@@ -4,10 +4,10 @@
   "description": "Notification to show your site visitors when Netlify is going through build process.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "uglifyjs src/netlify-build-status-alert.js --mangle --compress --output dist/netlify-build-status-alert.min.js",
-    "minify-css": "minify src/netlify-build-status-alert.css",
-    "minify-html": "minify src/netlify-build-status-alert.html"
+    "minify-css": "minify src/netlify-build-status-alert.css > dist/netlify-build-status-alert.min.css",
+    "minify-html": "minify src/netlify-build-status-alert.html > dist/netlify-build-status-alert.min.html",
+    "clean": "rm dist/netlify-build-status-alert.min.css dist/netlify-build-status-alert.min.html",
+    "build": "npm run minify-css && npm run minify-html && webpack && npm run clean"
   },
   "repository": {
     "type": "git",
@@ -30,6 +30,7 @@
   "homepage": "https://github.com/kwickramasekara/netlify-build-status-alert#readme",
   "devDependencies": {
     "minify": "^7.0.1",
-    "uglify-js": "^3.13.2"
+    "raw-loader": "^4.0.2",
+    "webpack-cli": "^4.6.0"
   }
 }
