@@ -54,6 +54,7 @@
   display: inline-block;
   margin-left: 10px;
   font-size: 16px;
+  font-weight: normal;
 }
 #netlify-build-status-alert .nbsa-block .nbsa-action button:hover,
 #netlify-build-status-alert .nbsa-block .nbsa-action button:focus,
